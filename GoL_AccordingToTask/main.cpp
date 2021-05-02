@@ -301,11 +301,8 @@ void GameOfLife::onUpdate()
 	if (m_aliveCount == oldCount) // If they are the same we might be in end condition
 	{
 		if (noStateChangeOld == noStateChange) //check also statechange amounts
-		{
-			if (m_noStateChange == m_aliveCount) // when no state changes are lower than alive count we have mover or ocillator 
-			{
-				m_failSafeCounter++; //increment failsafe counter, sometimes alive count can be same multiple generations				
-			}
+		{			
+			 m_failSafeCounter++; //increment failsafe counter, sometimes alive count can be same multiple generations						
 		}
 		else
 		{
