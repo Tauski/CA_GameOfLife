@@ -29,9 +29,7 @@
 			3. If it has 2 or 3 neighbors, it will remain "alive".
 		If the cell is dead:
 			1. If it has exactly three neighbors, it will turn "alive", as if by regrowth.
-
-	@github.com/Tauski/GameOfLife_Further/GoL_AccordingToTask
-
+	
 	This project uses console output to visually display generations. This is not fastest or even recommended way of doing things.
 	But that said this is still quite fast depending of the size of board (I suggest no larger than 50x50 for slower PC:s) and speed of your PC.
 	Also it is easy to use and modify how you like. 
