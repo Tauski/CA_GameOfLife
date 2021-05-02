@@ -304,12 +304,12 @@ void GameOfLife::onUpdate()
 		{
 			if (m_noStateChange == m_aliveCount) // when no state changes are lower than alive count we have mover or ocillator 
 			{
-				m_failSafeCounter++; //repeating cells are in the same spot, increment failsafe counter, sometimes alive count can be same multiple generations				
+				m_failSafeCounter++; //increment failsafe counter, sometimes alive count can be same multiple generations				
 			}
 		}
 		else
 		{
-			m_failSafeCounter = 0;
+			m_failSafeCounter = 0; //Reset failsafe counter becouse no concurrent aliveCount
 		}
 	}	
 
